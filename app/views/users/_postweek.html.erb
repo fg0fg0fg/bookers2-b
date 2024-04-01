@@ -8,7 +8,7 @@
     </tr>
     <tr>
       <% (6.downto(0)).each do |n| %>
-        <td><%= @books.where(created_at: n.day.ago.all_day).count %></td>
+        <td><%= books.where(created_at: n.day.ago.all_day).count %></td>
       <% end %>
     </tr>
   </tbody>
