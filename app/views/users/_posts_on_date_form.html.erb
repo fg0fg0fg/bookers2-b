@@ -1,0 +1,5 @@
+<%= form_with url: user_posts_on_date_path(user), method: :get, local: false do |f| %>
+  <%= f.date_field :created_at, class: "form-control" %>
+  <%= f.submit '検索', class: "btn btn-info" %>
+<% end %>
+<div class="posts_on_date_table"></div>
